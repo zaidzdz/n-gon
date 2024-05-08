@@ -205,6 +205,7 @@ const m = {
         m.transX += (m.transSmoothX - m.transX) * m.lookSmoothing;
         m.transY += (m.transSmoothY - m.transY) * m.lookSmoothing;
     },
+    //crouch
     doCrouch() {
         if (!m.crouch) {
             m.crouch = true;
@@ -217,6 +218,7 @@ const m = {
             }
         }
     },
+    //stand up
     undoCrouch() {
         if (m.crouch) {
             m.crouch = false;
